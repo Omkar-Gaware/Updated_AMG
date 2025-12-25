@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - AM Global | Your Trusted Technology Partner</title>
+    <link rel="stylesheet" href="./Code/Home/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="Code/Home/Index.html"><img src="Code/images/AM Global Logo copy.png" alt="AM Global Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <!-- <li><a href="../Products/Index.html">Products</a></li> -->
+                <li><a href="Code/Ai/Index.html">AI</a></li>
+                <li><a href="Code/Automation/Index.html">Automation</a></li>
+                <li><a href="Code/Hardware/Index.html">Hardware</a></li>
+                <li><a href="Code/About/Index.html">About Us</a></li>
+                <li><a href="Code/Contact/Index.html">Contact Us</a></li>
+            </ul>
+            <button class="contact-nav-btn">
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfoK6vgeDLR1E3rNieQdl8b1TOaQg3b1KxLlOs0zJr1URg1hQ/viewform?usp=dialog">
+                    Enquiry Form
+                </a>
+            </button>
+            <button class="mobile-menu" onclick="toggleMobileMenu()">☰</button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <div class="logo">
+                    <div class="logo-icon"> <a href="Code/Home/index.html"><img src="Code/images/AM Global Logo copy.png"
+                                alt="AM Global Logo"></a>
+                    </div>
+                </div>
+                <button class="mobile-menu-close" onclick="closeMobileMenu()">✕</button>
+            </div>
+            <ul class="mobile-nav-links">
+                <!-- <li><a href="../Products/Index.html" onclick="closeMobileMenu()">Products</a></li> -->
+                <li><a href="Code/Ai/Index.html" onclick="closeMobileMenu()">AI</a></li>
+                <li><a href="Code/Automation/Index.html" onclick="closeMobileMenu()">Automation</a></li>
+                <li><a href="Code/Hardware/Index.html" onclick="closeMobileMenu()">Hardware</a></li>
+                <li><a href="Code/About/Index.html" onclick="closeMobileMenu()">About Us</a></li>
+                <li><a href="Code/Contact/Index.html" onclick="closeMobileMenu()">Contact Us</a></li>
+            </ul>
+            <button class="contact-nav-btn">
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfoK6vgeDLR1E3rNieQdl8b1TOaQg3b1KxLlOs0zJr1URg1hQ/viewform?usp=dialog">
+                    Enquiry Form
+                </a>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- Main Hero Section -->
+    <section class="main-hero-section">
+        <div class="container">
+            <!-- Background with blur effect -->
+            <div class="background" id="background"></div>
+
+            <!-- Floating particles -->
+            <div class="particles" id="particles"></div>
+
+            <!-- Vision Pro Logo -->
+            <div class="logo-overlay" id="logo">
+                <span class="vision">VISION</span><span class="pro">PRO</span>
+            </div>
+
+            <!-- Play button -->
+            <button class="play-button" id="playBtn">
+                ▶
+            </button>
+
+            <!-- Video container -->
+            <div class="video-container" id="videoContainer">
+                <div class="video-wrapper">
+                    <video id="video" preload="metadata">
+                        <!-- Source will be set by JavaScript -->
+                        <source id="videoSource" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <div class="controls">
+                        <div class="control-bar">
+                            <button class="play-pause-btn" id="playPauseBtn">▶</button>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                            <div class="time-display" id="timeDisplay">0:00 / 0:00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-grid">
+            <!-- Logo and Description Section -->
+            <div class="footer-section loading">
+                <div class="footer-logo">
+                    <img src="Code/images/AM Global Logo copy.png" alt="AM Global Logo">
+                </div>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-section loading">
+                <h3>Quick Links</h3>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="Code/Products/Index.html">Products</a></li>
+                        <li><a href="Code/Ai/Index.html">AI Solutions</a></li>
+                        <li><a href="Code/Automation/Index.html">Automation</a></li>
+                        <li><a href="Code/Hardware/Index.html">Hardware</a></li>
+                        <li><a href="Code/About/Index.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-section loading">
+                <h3>Contact Us</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg class="contact-icon" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span class="contact-text phone">+91 9767734249</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <svg class="contact-icon" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                        <span class="contact-text">support@am-global.in</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <svg class="contact-icon" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="contact-text">A-18, Kanchunjunga Arcade, Hadapsar,
+                            Pune 411028</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="footer-section loading">
+                <h3>Get Started</h3>
+                <div class="cta-section">
+                    <p style="color: #bdc3c7; margin-bottom: 1.5rem; line-height: 1.6;">
+                        Ready to transform your business with cutting-edge technology?
+                    </p>
+                    <button class="contact-nav-btn">
+                        <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSfoK6vgeDLR1E3rNieQdl8b1TOaQg3b1KxLlOs0zJr1URg1hQ/viewform?usp=dialog">
+                            Enquiry Form
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-bottom loading">
+            <div class="social-links">
+                <img class="make-logo" style="height: 50px;
+  border-radius: 40px;" src="Code/images/image.png" alt="AM Global Logo">
+                <a href="https://www.youtube.com/@amglobal2528" class="social-link" title="YouTube">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                    </svg>
+                </a>
+            </div>
+
+            <p>
+                © 2025 AM Global. All rights reserved. | Designed with ❤️ in India</p>
+        </div>
+    </div>
+
+    <script src="app.js">
+
+    </script>
+</body>
+
+</html>

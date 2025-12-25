@@ -1,0 +1,269 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AM Global</title>
+    <link rel="icon" type="image/png" href="../images/AM Global Logo copy.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../Home/index.html"><img src="../images/AM Global Logo copy.png" alt="AM Global Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <!-- <li><a href="../Products/Index.html">Products</a></li> -->
+                <li><a href="../Ai/Index.html">AI</a></li>
+                <li><a href="../Automation/Index.html">Automation</a></li>
+                <li><a href="../Hardware/Index.html">Hardware</a></li>
+                <li><a href="../About/Index.html">About Us</a></li>
+                <li><a href="../Contact/Index.html">Contact Us</a></li>
+            </ul>
+            <button class="contact-nav-btn">
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfoK6vgeDLR1E3rNieQdl8b1TOaQg3b1KxLlOs0zJr1URg1hQ/viewform?usp=dialog">
+                    Enquiry Form
+                </a>
+            </button>
+            <button class="mobile-menu" onclick="toggleMobileMenu()">☰</button>
+        </nav>
+    </header>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <div class="logo">
+                    <div class="logo-icon"> <a href="../Home/index.html"><img src="../images/AM Global Logo copy.png"
+                                alt="AM Global Logo"></a>
+                    </div>
+                </div>
+                <button class="mobile-menu-close" onclick="closeMobileMenu()">✕</button>
+            </div>
+            <ul class="mobile-nav-links">
+                <!-- <li><a href="../Products/Index.html" onclick="closeMobileMenu()">Products</a></li> -->
+                <li><a href="../Ai/Index.html" onclick="closeMobileMenu()">AI</a></li>
+                <li><a href="../Automation/Index.html" onclick="closeMobileMenu()">Automation</a></li>
+                <li><a href="../Hardware/Index.html" onclick="closeMobileMenu()">Hardware</a></li>
+                <li><a href="../About/Index.html" onclick="closeMobileMenu()">About Us</a></li>
+                <li><a href="../Contact/Index.html" onclick="closeMobileMenu()">Contact Us</a></li>
+            </ul>
+            <button class="contact-nav-btn">
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfoK6vgeDLR1E3rNieQdl8b1TOaQg3b1KxLlOs0zJr1URg1hQ/viewform?usp=dialog">
+                    Enquiry Form
+                </a>
+            </button>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="hero">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="hero-content">
+            <h1>AM Global Automation</h1>
+            <p class="hero-subtitle">Smart Home, Office & Building Automation Solutions<br>Control Everything with
+                Voice, App & Intelligence</p>
+        </div>
+    </section>
+    <section class="products-section" id="products">
+        <div class="section-header">
+            <h2 class="section-title">Automation Solutions</h2>
+            <p class="section-subtitle">Transform your space into a smart environment with our comprehensive automation
+                products</p>
+        </div>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="product-icon">🏠</div>
+                </div>
+                <div class="product-content">
+                    <span class="badge">Smart Home</span>
+                    <h3>Home Automation</h3>
+                    <p>Retrofit your existing electrical switchboards with smart automation units. No rewiring required,
+                        instant upgrade to smart home.</p>
+                    <ul class="features-list">
+                        <li>Compatible with existing switches</li>
+                        <li>Easy DIY installation</li>
+                        <li>Control lights, fans, appliances</li>
+                        <li>Scheduling & automation rules</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="product-icon">🏢</div>
+                </div>
+                <div class="product-content">
+                    <span class="badge">Commercial</span>
+                    <h3>Office Automation</h3>
+                    <p>Intelligent office management system for lighting, climate control, security, and energy
+                        optimization across your workspace.</p>
+                    <ul class="features-list">
+                        <li>Centralized control dashboard</li>
+                        <li>Meeting room automation</li>
+                        <li>Energy consumption tracking</li>
+                        <li>Access control integration</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="product-icon">🏗️</div>
+                </div>
+                <div class="product-content">
+                    <span class="badge">Enterprise</span>
+                    <h3>Building Automation</h3>
+                    <p>Complete building management system for multi-floor facilities with advanced controls,
+                        monitoring, and energy efficiency.</p>
+                    <ul class="features-list">
+                        <li>HVAC automation & control</li>
+                        <li>Multi-zone management</li>
+                        <li>Real-time monitoring</li>
+                        <li>Predictive maintenance alerts</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="product-icon">🎙️</div>
+                </div>
+                <div class="product-content">
+                    <span class="badge">Voice Control</span>
+                    <h3>Alexa & Siri Integration</h3>
+                    <p>Seamless voice control integration with Amazon Alexa and Apple Siri for hands-free operation of
+                        all your devices.</p>
+                    <ul class="features-list">
+                        <li>Works with Alexa & Siri</li>
+                        <li>Natural voice commands</li>
+                        <li>Custom voice routines</li>
+                        <li>Multi-room voice control</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="product-icon">📱</div>
+                </div>
+                <div class="product-content">
+                    <span class="badge">Mobile App</span>
+                    <h3>Android / iOS App</h3>
+                    <p>Powerful mobile application for both Android and iOS platforms. Control your entire automation
+                        system from anywhere, anytime.</p>
+                    <ul class="features-list">
+                        <li>Remote access & control</li>
+                        <li>Real-time notifications</li>
+                        <li>Intuitive user interface</li>
+                        <li>Multi-device support</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="product-icon">🔌</div>
+                </div>
+                <div class="product-content">
+                    <span class="badge">IoT Sensors</span>
+                    <h3>Budget Friendly IoT Sensors</h3>
+                    <p>Affordable smart sensors for motion detection, temperature, humidity, air quality monitoring, and
+                        automation triggers.</p>
+                    <ul class="features-list">
+                        <li>Motion & occupancy sensors</li>
+                        <li>Temperature & humidity monitoring</li>
+                        <li>Door/window contact sensors</li>
+                        <li>Low cost, high reliability</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-grid">
+            <!-- Logo and Description Section -->
+            <div class="footer-section loading">
+                <div class="footer-logo">
+                    <img src="../images/AM Global Logo copy.png" alt="AM Global Logo">
+                </div>
+            </div>
+            <!-- Quick Links Section -->
+            <div class="footer-section loading">
+                <h3>Quick Links</h3>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="../Products/Index.html">Products</a></li>
+                        <li><a href="../Ai/Index.html">AI Solutions</a></li>
+                        <li><a href="../Automation/Index.html">Automation</a></li>
+                        <li><a href="../Hardware/Index.html">Hardware</a></li>
+                        <li><a href="../About/Index.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Contact Us Section -->
+            <div class="footer-section loading">
+                <h3>Contact Us</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg class="contact-icon" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span class="contact-text phone">+91 9767734249</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg class="contact-icon" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                        <span class="contact-text">support@am-global.in</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg class="contact-icon" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="contact-text">A-18, Kanchunjunga Arcade, Hadapsar,
+                            Pune 411028</span>
+                    </div>
+                </div>
+            </div>
+            <!-- CTA Section -->
+            <div class="footer-section loading">
+                <h3>Get Started</h3>
+                <div class="cta-section">
+                    <p style="color: #bdc3c7; margin-bottom: 1.5rem; line-height: 1.6;">
+                        Ready to transform your business with cutting-edge technology?
+                    </p>
+                    <button class="contact-nav-btn">
+                        <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSfoK6vgeDLR1E3rNieQdl8b1TOaQg3b1KxLlOs0zJr1URg1hQ/viewform?usp=dialog">
+                            Enquiry Form
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright Section -->
+        <div class="footer-bottom loading">
+            <div class="social-links">
+                <img class="make-logo" style="height: 50px;
+  border-radius: 40px;" src="../images/image.png" alt="AM Global Logo">
+                <a href="https://www.youtube.com/@amglobal2528" class="social-link" title="YouTube">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                    </svg>
+                </a>
+            </div>
+            <p>© 2025 AM Global. All rights reserved. | Designed with ❤️ in India</p>
+        </div>
+    </div>
+    <script src="app.js">
+    </script>
+</body>
+</html>
+```

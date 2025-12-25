@@ -1,0 +1,228 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AM Global</title>
+    <link rel="icon" type="image/png" href="../images/AM Global Logo copy.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../Home/index.html"><img src="../images/AM Global Logo copy.png" alt="AM Global Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <!-- <li><a href="../Products/Index.html">Products</a></li> -->
+                <li><a href="../Ai/Index.html">AI</a></li>
+                <li><a href="../Automation/Index.html">Automation</a></li>
+                <li><a href="../Hardware/Index.html">Hardware</a></li>
+                <li><a href="../About/Index.html">About Us</a></li>
+                <li><a href="../Contact/Index.html">Contact Us</a></li>
+            </ul>
+            <button class="contact-nav-btn">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfoK6vgeDLR1E3rNieQdl8b1TOaQg3b1KxLlOs0zJr1URg1hQ/viewform?usp=dialog">
+                    Enquiry Form
+                </a>
+            </button>
+            <button class="mobile-menu" onclick="toggleMobileMenu()">☰</button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <a href="../Home/index.html"><img src="../images/AM Global Logo copy.png" alt="AM Global Logo"></a>
+                    </div>
+                </div>
+                <button class="mobile-menu-close" onclick="closeMobileMenu()">✕</button>
+            </div>
+            <ul class="mobile-nav-links">
+                <!-- <li><a href="../Products/Index.html" onclick="closeMobileMenu()">Products</a></li> -->
+                <li><a href="../Ai/Index.html" onclick="closeMobileMenu()">AI</a></li>
+                <li><a href="../Automation/Index.html" onclick="closeMobileMenu()">Automation</a></li>
+                <li><a href="../Hardware/Index.html" onclick="closeMobileMenu()">Hardware</a></li>
+                <li><a href="../About/Index.html" onclick="closeMobileMenu()">About Us</a></li>
+                <li><a href="../Contact/Index.html" onclick="closeMobileMenu()">Contact Us</a></li>
+            </ul>
+            <button class="contact-nav-btn">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfoK6vgeDLR1E3rNieQdl8b1TOaQg3b1KxLlOs0zJr1URg1hQ/viewform?usp=dialog">
+                    Enquiry Form
+                </a>
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>Seize Tomorrow's Opportunities</h1>
+                <p>Amazing things happen when you connect the unconnected. We create long-lasting partnerships and provide innovative solutions that fuel your success through cutting-edge technology.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About AM Global</h2>
+                    <p>AM Global helps seize the opportunities of tomorrow by proving that amazing things can happen when you connect the unconnected. An integral part of our DNA is creating long-lasting customer partnerships, working together to identify our customers' needs and provide solutions that fuel their success.</p>
+                    <p>AM Global offers a comprehensive portfolio of products in Security, Society Management, Educational Institute Management, and BlockChain Domains. We are continuously evolving our offerings through the use of the latest AI Technologies, ensuring our clients stay ahead in an ever-changing digital landscape.</p>
+                </div>
+                <div class="about-image">
+                    <img src="../images/AM Global Logo copy.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <h2 class="section-title">Our Product Offerings</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon">📹</div>
+                    <h3>VisionPro - Video Management Suite</h3>
+                    <p>Comprehensive video surveillance and management solutions designed for enterprise-level security monitoring with advanced features and intuitive controls.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🤖</div>
+                    <h3>VisionPro - AI Video Analytics</h3>
+                    <p>Intelligent video analysis powered by cutting-edge artificial intelligence technology for automated threat detection and behavioral analysis.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🏠</div>
+                    <h3>Automation - Home, Office, Building</h3>
+                    <p>Smart automation solutions for residential and commercial spaces, integrating IoT devices for enhanced efficiency and control.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <h2 class="section-title">Our Leadership Team</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="founder-header">
+                        <div class="founder-image">
+                            <!-- Replace with actual image: <img src="path-to-prasad-image.jpg" alt="Mr. Prasad"> -->
+                            <div class="founder-image-placeholder">P</div>
+                        </div>
+                        <div class="founder-info">
+                            <h3>Mr. Prasad</h3>
+                            <div class="founder-title">Strategic Advisor & Angel Investor</div>
+                        </div>
+                    </div>
+                    <div class="founder-description">
+                        Active Angel Investor with Indian and US Tech Startups. Experienced in managing Global engagements and Programs with deep expertise in emerging technologies and startup ecosystems.
+                    </div>
+                    <div class="expertise-section">
+                        <div class="expertise-title">Areas of Expertise:</div>
+                        <div class="expertise-tags">
+                            <span class="expertise-tag">Angel Investment</span>
+                            <span class="expertise-tag">Blockchain</span>
+                            <span class="expertise-tag">Drone Technology</span>
+                            <span class="expertise-tag">Global Partnerships</span>
+                        </div>
+                    </div>
+                    <div class="achievements">
+                        <h4>Key Achievements:</h4>
+                        <ul>
+                            <li>Successfully implemented Drone Tech projects with Corporates</li>
+                            <li>Led Blockchain initiatives for Government projects</li>
+                            <li>Managed multiple international technology partnerships</li>
+                            <li>Mentor to various Indian and US tech startups</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Removed Mr. Tushar card -->
+
+                <div class="team-card">
+                    <div class="founder-header">
+                        <div class="founder-image">
+                            <!-- Replace with actual image: <img src="path-to-rajendra-image.jpg" alt="Mr. Rajendra"> -->
+                            <div class="founder-image-placeholder">R</div>
+                        </div>
+                        <div class="founder-info">
+                            <h3>Mr. Rajendra</h3>
+                            <div class="founder-title">Founding Member & Growth Advisor</div>
+                        </div>
+                    </div>
+                    <div class="founder-description">
+                        Accomplished entrepreneur with a progressive approach to business development. Founding member bringing unique perspectives from diverse industries including agriculture and technology sectors.
+                    </div>
+                    <div class="expertise-section">
+                        <div class="expertise-title">Areas of Expertise:</div>
+                        <div class="expertise-tags">
+                            <span class="expertise-tag">Business Growth</span>
+                            <span class="expertise-tag">Strategic Planning</span>
+                            <span class="expertise-tag">Sustainability</span>
+                            <span class="expertise-tag">Leadership</span>
+                        </div>
+                    </div>
+                    <div class="achievements">
+                        <h4>Core Contributions:</h4>
+                        <ul>
+                            <li>Strategic guidance on organizational growth initiatives</li>
+                            <li>Implementation of sustainable business practices</li>
+                            <li>Cross-industry experience in agriculture and technology</li>
+                            <li>Mentoring and leadership development within the organization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="founder-header">
+                        <div class="founder-image">
+                            <!-- Replace with actual image: <img src="path-to-yash-image.jpg" alt="Mr. Yash"> -->
+                            <div class="founder-image-placeholder">Y</div>
+                        </div>
+                        <div class="founder-info">
+                            <h3>Mr. Yash</h3>
+                            <div class="founder-title">Business Development Manager</div>                       
+                        </div>
+                    </div>
+                    <div class="founder-description">
+                        Dynamic business development professional with a strong passion for sales and market expansion. Engineering background provides technical depth to client relationship management and business strategy.
+                    </div>
+                    <div class="expertise-section">
+                        <div class="expertise-title">Areas of Expertise:</div>
+                        <div class="expertise-tags">
+                            <span class="expertise-tag">Business Development</span>
+                            <span class="expertise-tag">Client Relations</span>
+                            <span class="expertise-tag">Market Analysis</span>
+                            <span class="expertise-tag">Sales Strategy</span>
+                        </div>
+                    </div>
+                    <div class="achievements">
+                        <h4>Key Responsibilities:</h4>
+                        <ul>
+                            <li>Driving business development initiatives across multiple verticals</li>
+                            <li>Managing client relationships and ensuring customer satisfaction</li>
+                            <li>Market research and competitive analysis</li>
+                            <li>Contributing to AM Global's expansion strategies</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
+```
